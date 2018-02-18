@@ -12,5 +12,5 @@ class Application
     item = req.path.split("/items/").last
   else
     resp.status = 404
-    resp.write "Item not found"
+    resp.write "Route not found"
 end
