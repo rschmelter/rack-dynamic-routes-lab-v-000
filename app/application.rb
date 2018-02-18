@@ -11,6 +11,6 @@ class Application
   if req.path.match(/items/)
     item = req.path.split("/items/").last
   else
-    resp.status = 400
+    resp.status = 404
     resp.write "Item not found"
 end
